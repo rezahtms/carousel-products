@@ -1,14 +1,17 @@
 import cx from 'classnames';
 import { CarouselItem } from './CarouselItem';
+import { useGetProducts } from '@/features';
 
 
 export const CarouselList = () => {
+    const {isLoading,products} =useGetProducts();
+    console.log(isLoading,products)
     return (
         <ul className={cx('carousel-list flex ', 'w-full')}>
-            {products?.map(product => (
-            <CarouselItem {...product}/>
+            {productss?.map(product => (
+            <CarouselItem key={product.id} {...product}/>
             ))}
         </ul>
     );
 };
-const products = [{ title: 'hello', id: 1 }, { title: 'hello', id: 2 }]
+const productss = [{ title: 'hello', id: 1 }, { title: 'hello', id: 2 }]
