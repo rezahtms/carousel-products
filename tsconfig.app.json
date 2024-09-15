@@ -18,12 +18,7 @@
     "jsx": "react-jsx",
     "paths": {
       "@/*": [
-        "./src/components",
-        "./src/constants",
-        "./src/features",
-        "./src/hooks",
-        "./src/services",
-        "./src/types"
+        "./src/*"
       ]
     },
     /* Linting */
