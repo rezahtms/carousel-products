@@ -2,7 +2,7 @@
 import { FC } from "react";
 
 interface CarouselItemProps {
-    id: number;
+    id: string;
     title: string;
 }
 
