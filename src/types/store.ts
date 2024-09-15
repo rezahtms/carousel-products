@@ -1,4 +1,4 @@
-import { GlobalSlice } from "@/stores/globalSlice";
+import { GlobalSlice } from "@/stores/global-slice";
 
 
 
