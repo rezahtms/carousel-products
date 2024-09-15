@@ -1,9 +1,6 @@
+import { Product } from "@/components";
 
 export const ProductPage = () => {
-  return (
-    <div>
-      Product Page
-    </div>
-  )
+  return <Product/>
 }
 
