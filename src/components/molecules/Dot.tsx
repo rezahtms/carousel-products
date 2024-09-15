@@ -12,7 +12,6 @@ export const Dot: FC<DotProps> = ({ ind }) => {
     const handleSetCarouselInd = useCallback(() => {
         setCarouselInd(ind)
     }, [ind, setCarouselInd]);
-    console.log(carouselInd);
     return (
         <button
             onClick={handleSetCarouselInd}
