@@ -12,6 +12,5 @@ export const ViewProductDetailLink: FC<ViewLinkProps> = ({ href,title }) => {
                 ' block py-3 bg-black opacity-[0.7] w-full absolute bottom-10 z-50 left-1/2 right-1/2 transform -translate-x-1/2 cursor-pointer')}>
             <span className={cx('text-center text-[12px] text-white font-bold block')}>View Product {title}</span>
         </Link>
-
     )
 }
