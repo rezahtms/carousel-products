@@ -25,14 +25,14 @@ export const Product = () => {
           {product?.type}
         </p>
       </div>
-      <div className={cx('product-details p-2 space-y-2','md:w-[50%]')}>
+      <div className={cx('product-details p-2 space-y-2','md:w-[100%]')}>
         <h2 className="text-[16px] font-bold  text-gray-800 mb-3">{product?.title}</h2>
         <ProductDetailGroup icon={<SvgPrice />} title='Price' value={`$ ${product?.price}`} />
         <ProductDetailGroup icon={<SvgRate />} title='Rating' value={product?.rate} />
         <ProductDetailGroup icon={<SvgCity />} title='City' value={product?.city} />
         <ProductDetailGroup icon={<SvgPresenter />} title='Presenter' value={product?.presenter} />
         <ProductDetailGroup icon={<SvgRuntime />} title='Runtime' value={product?.runtime} />
-        <div className={cx('product-buttons-wrapper', ' flex items-center gap-2 mt-auto')}>  
+        <div className={cx('product-buttons-wrapper', ' flex items-center flex-wrap gap-2 mt-auto')}>  
           <ProductUrl href={product?.url} title={`View ${product?.type}`} target='_blank' />  
           <ProductUrl title=' Home' href={`/#${product?.id}`} />  
         </div> 
