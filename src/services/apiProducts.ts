@@ -1,14 +1,14 @@
-import { Product } from "@/types";
+import { ProductType } from "@/types";
 
 const API_URL = `https://66e20997c831c8811b57050e.mockapi.io/api/v1/home/items`;
 
-export const getProducts = async (): Promise<Product[]> => {
+export const getProducts = async (): Promise<ProductType[]> => {
     try {
         const response = await fetch(API_URL);
         if (!response.ok) {
             throw new Error(`Error: ${response.status} - ${response.statusText}`);
         }
-        const data = await response.json() as Product[];
+        const data = await response.json() as ProductType[];
         return data;
     } catch (error) {
         if (error instanceof Error) {

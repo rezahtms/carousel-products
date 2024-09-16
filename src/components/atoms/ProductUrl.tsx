@@ -11,7 +11,7 @@ interface ProductUrlProps {
 export const ProductUrl: FC<ProductUrlProps> = ({ href, title, target }) => {
     return (
         <Link to={href}
-            className={cx('product-url', "mt-2 block min-w-[48%] flex-1 bg-blue-600 text-white text-center py-2 px-3 font-semibold rounded-md hover:bg-blue-700 transition duration-200 shadow-lg outline-none transform hover:scale-105"
+            className={cx('product-url', " block min-w-[48%] flex-1 bg-blue-600 text-white text-center py-2 px-3 font-semibold rounded-md hover:bg-blue-700  shadow-lg outline-none "
             )}
             target={target}>
             {title}

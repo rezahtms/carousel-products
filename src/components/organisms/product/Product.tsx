@@ -32,7 +32,7 @@ export const Product = () => {
         <ProductDetailGroup icon={<SvgCity />} title='City' value={product?.city} />
         <ProductDetailGroup icon={<SvgPresenter />} title='Presenter' value={product?.presenter} />
         <ProductDetailGroup icon={<SvgRuntime />} title='Runtime' value={product?.runtime} />
-        <div className={cx('product-buttons-wrapper', ' flex items-center flex-wrap gap-2 mt-auto')}>  
+        <div className={cx('product-buttons-wrapper', ' flex items-center flex-wrap gap-3 mt-auto')}>  
           <ProductUrl href={product?.url} title={`View ${product?.type}`} target='_blank' />  
           <ProductUrl title=' Home' href={`/#${product?.id}`} />  
         </div> 
