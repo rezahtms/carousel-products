@@ -16,7 +16,7 @@ export const Product = () => {
     <div className={cx('product', 'w-[60vw] mx-auto flex flex-col rounded-lg shadow-xl overflow-hidden bg-white transition-transform cursor-pointer text-nowrap hover:scale-105', 'md:flex-row md:w-[70vw]', )}>
       <div className={cx('product-image-wrapper', "flex justify-center items-stretch relative  transition-transform duration-300 group ",'md:w-[50%]')}>
         <img
-          className="w-full h-full max-w-auto object-cover transition duration-300 group-hover:blur-sm"
+          className="w-full h-full max-w-auto object-fit-cover transition duration-300 group-hover:blur-sm"
           src={`${product?.image}`}
           alt={`${product?.title} image`}
           loading='lazy'

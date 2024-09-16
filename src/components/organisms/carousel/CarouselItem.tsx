@@ -12,7 +12,7 @@ export const CarouselItem: FC<CarouselItemProps> = ({ id, image, title }) => {
         <li className="flex-shrink-0 w-full h-[70vh] relative">  
             <div className="absolute inset-0 flex justify-center items-center">  
                 <img  
-                    className="w-full h-full rounded-lg"  
+                    className="w-full h-full rounded-lg object-fit-cover"  
                     src={image}  
                     alt={`${title}-image`}  
                     width="460" height="345"  
